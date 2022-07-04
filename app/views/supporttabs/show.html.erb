@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @supporttab %>
+
+<div>
+  <%= link_to "Edit this supporttab", edit_supporttab_path(@supporttab) %> |
+  <%= link_to "Back to supporttabs", supporttabs_path %>
+
+  <%= button_to "Destroy this supporttab", @supporttab, method: :delete %>
+</div>

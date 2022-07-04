@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @dossiertab %>
+
+<div>
+  <%= link_to "Edit this dossiertab", edit_dossiertab_path(@dossiertab) %> |
+  <%= link_to "Back to dossiertabs", dossiertabs_path %>
+
+  <%= button_to "Destroy this dossiertab", @dossiertab, method: :delete %>
+</div>

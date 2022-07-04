@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @departtab %>
+
+<div>
+  <%= link_to "Edit this departtab", edit_departtab_path(@departtab) %> |
+  <%= link_to "Back to departtabs", departtabs_path %>
+
+  <%= button_to "Destroy this departtab", @departtab, method: :delete %>
+</div>

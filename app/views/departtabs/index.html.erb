@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Departtabs</h1>
+
+<div id="departtabs">
+  <% @departtabs.each do |departtab| %>
+    <%= render departtab %>
+    <p>
+      <%= link_to "Show this departtab", departtab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New departtab", new_departtab_path %>

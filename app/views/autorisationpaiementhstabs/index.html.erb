@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Autorisationpaiementhstabs</h1>
+
+<div id="autorisationpaiementhstabs">
+  <% @autorisationpaiementhstabs.each do |autorisationpaiementhstab| %>
+    <%= render autorisationpaiementhstab %>
+    <p>
+      <%= link_to "Show this autorisationpaiementhstab", autorisationpaiementhstab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New autorisationpaiementhstab", new_autorisationpaiementhstab_path %>

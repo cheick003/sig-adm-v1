@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Filetabs</h1>
+
+<div id="filetabs">
+  <% @filetabs.each do |filetab| %>
+    <%= render filetab %>
+    <p>
+      <%= link_to "Show this filetab", filetab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New filetab", new_filetab_path %>

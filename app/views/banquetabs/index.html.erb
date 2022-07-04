@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Banquetabs</h1>
+
+<div id="banquetabs">
+  <% @banquetabs.each do |banquetab| %>
+    <%= render banquetab %>
+    <p>
+      <%= link_to "Show this banquetab", banquetab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New banquetab", new_banquetab_path %>

@@ -1,0 +1,32 @@
+<%= form_with(model: tauxhorairehstab) do |form| %>
+  <% if tauxhorairehstab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(tauxhorairehstab.errors.count, "error") %> prohibited this tauxhorairehstab from being saved:</h2>
+
+      <ul>
+        <% tauxhorairehstab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :tauxhorairehsch, style: "display: block" %>
+    <%= form.text_field :tauxhorairehsch %>
+  </div>
+
+  <div>
+    <%= form.label :descriptionch, style: "display: block" %>
+    <%= form.text_field :descriptionch %>
+  </div>
+
+  <div>
+    <%= form.label :pch, style: "display: block" %>
+    <%= form.check_box :pch %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

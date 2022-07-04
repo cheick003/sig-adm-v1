@@ -1,0 +1,37 @@
+<%= form_with(model: servicetab) do |form| %>
+  <% if servicetab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(servicetab.errors.count, "error") %> prohibited this servicetab from being saved:</h2>
+
+      <ul>
+        <% servicetab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :descriptionch, style: "display: block" %>
+    <%= form.text_field :descriptionch %>
+  </div>
+
+  <div>
+    <%= form.label :siglech, style: "display: block" %>
+    <%= form.text_field :siglech %>
+  </div>
+
+  <div>
+    <%= form.label :structuretab_id, style: "display: block" %>
+    <%= form.text_field :structuretab_id %>
+  </div>
+
+  <div>
+    <%= form.label :observationch, style: "display: block" %>
+    <%= form.text_field :observationch %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

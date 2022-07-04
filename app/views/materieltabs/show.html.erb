@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @materieltab %>
+
+<div>
+  <%= link_to "Edit this materieltab", edit_materieltab_path(@materieltab) %> |
+  <%= link_to "Back to materieltabs", materieltabs_path %>
+
+  <%= button_to "Destroy this materieltab", @materieltab, method: :delete %>
+</div>

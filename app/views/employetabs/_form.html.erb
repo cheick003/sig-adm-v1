@@ -1,0 +1,97 @@
+<%= form_with(model: employetab) do |form| %>
+  <% if employetab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(employetab.errors.count, "error") %> prohibited this employetab from being saved:</h2>
+
+      <ul>
+        <% employetab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :numeromclech, style: "display: block" %>
+    <%= form.text_field :numeromclech %>
+  </div>
+
+  <div>
+    <%= form.label :prenomch, style: "display: block" %>
+    <%= form.text_field :prenomch %>
+  </div>
+
+  <div>
+    <%= form.label :nomch, style: "display: block" %>
+    <%= form.text_field :nomch %>
+  </div>
+
+  <div>
+    <%= form.label :genretab_id, style: "display: block" %>
+    <%= form.text_field :genretab_id %>
+  </div>
+
+  <div>
+    <%= form.label :datench, style: "display: block" %>
+    <%= form.date_field :datench %>
+  </div>
+
+  <div>
+    <%= form.label :etatciviltab_id, style: "display: block" %>
+    <%= form.text_field :etatciviltab_id %>
+  </div>
+
+  <div>
+    <%= form.label :telephonech, style: "display: block" %>
+    <%= form.text_field :telephonech %>
+  </div>
+
+  <div>
+    <%= form.label :adressech, style: "display: block" %>
+    <%= form.text_field :adressech %>
+  </div>
+
+  <div>
+    <%= form.label :statuttab_id, style: "display: block" %>
+    <%= form.text_field :statuttab_id %>
+  </div>
+
+  <div>
+    <%= form.label :cadretab_id, style: "display: block" %>
+    <%= form.text_field :cadretab_id %>
+  </div>
+
+  <div>
+    <%= form.label :corpstab_id, style: "display: block" %>
+    <%= form.text_field :corpstab_id %>
+  </div>
+
+  <div>
+    <%= form.label :structuretab_id, style: "display: block" %>
+    <%= form.text_field :structuretab_id %>
+  </div>
+
+  <div>
+    <%= form.label :servicetab_id, style: "display: block" %>
+    <%= form.text_field :servicetab_id %>
+  </div>
+
+  <div>
+    <%= form.label :banquetab_id, style: "display: block" %>
+    <%= form.text_field :banquetab_id %>
+  </div>
+
+  <div>
+    <%= form.label :rch, style: "display: block" %>
+    <%= form.check_box :rch %>
+  </div>
+
+  <div>
+    <%= form.label :cch, style: "display: block" %>
+    <%= form.check_box :cch %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

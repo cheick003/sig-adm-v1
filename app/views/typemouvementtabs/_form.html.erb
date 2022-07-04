@@ -1,0 +1,22 @@
+<%= form_with(model: typemouvementtab) do |form| %>
+  <% if typemouvementtab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(typemouvementtab.errors.count, "error") %> prohibited this typemouvementtab from being saved:</h2>
+
+      <ul>
+        <% typemouvementtab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :descriptionch, style: "display: block" %>
+    <%= form.text_field :descriptionch %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

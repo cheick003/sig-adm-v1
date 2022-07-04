@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Attributtabs</h1>
+
+<div id="attributtabs">
+  <% @attributtabs.each do |attributtab| %>
+    <%= render attributtab %>
+    <p>
+      <%= link_to "Show this attributtab", attributtab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New attributtab", new_attributtab_path %>

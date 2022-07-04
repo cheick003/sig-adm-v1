@@ -1,0 +1,26 @@
+<!--begin header   -->
+<%= render partial: 'shared/common/index_header' %>
+<!--end header   -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!--begin container-fluid/sidebarMenu   -->
+    <%= render partial: 'shared/common/index_sidebar' %>
+    <!--end container-fluid/sidebarMenu   -->
+    <!--begin container-fluid/main   -->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-5">
+      <!-- begin container-fluid/main/banner titre and btn-group -->
+      <%= render partial: 'shared/common/index_banner' %>
+      <!-- end container-fluid/main/banner titre and btn-group -->
+      <!-- begin container-fluid/main/content page -->
+      <!-- ---------------- -->
+
+      <%= render partial: 'shared/common/index_content' %>
+
+      <!-- ---------------- -->
+
+      <!-- end container-fluid/main/content page -->
+    </main>
+    <!--end container-fluid/main   -->
+  </div>
+</div>

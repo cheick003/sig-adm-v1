@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Structuretabs</h1>
+
+<div id="structuretabs">
+  <% @structuretabs.each do |structuretab| %>
+    <%= render structuretab %>
+    <p>
+      <%= link_to "Show this structuretab", structuretab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New structuretab", new_structuretab_path %>

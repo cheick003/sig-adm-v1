@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @structuretab %>
+
+<div>
+  <%= link_to "Edit this structuretab", edit_structuretab_path(@structuretab) %> |
+  <%= link_to "Back to structuretabs", structuretabs_path %>
+
+  <%= button_to "Destroy this structuretab", @structuretab, method: :delete %>
+</div>

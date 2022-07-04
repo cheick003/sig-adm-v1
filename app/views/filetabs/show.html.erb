@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @filetab %>
+
+<div>
+  <%= link_to "Edit this filetab", edit_filetab_path(@filetab) %> |
+  <%= link_to "Back to filetabs", filetabs_path %>
+
+  <%= button_to "Destroy this filetab", @filetab, method: :delete %>
+</div>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Familletabs</h1>
+
+<div id="familletabs">
+  <% @familletabs.each do |familletab| %>
+    <%= render familletab %>
+    <p>
+      <%= link_to "Show this familletab", familletab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New familletab", new_familletab_path %>

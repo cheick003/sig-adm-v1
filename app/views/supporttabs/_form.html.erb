@@ -1,0 +1,27 @@
+<%= form_with(model: supporttab) do |form| %>
+  <% if supporttab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(supporttab.errors.count, "error") %> prohibited this supporttab from being saved:</h2>
+
+      <ul>
+        <% supporttab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :descriptionch, style: "display: block" %>
+    <%= form.text_field :descriptionch %>
+  </div>
+
+  <div>
+    <%= form.label :siglech, style: "display: block" %>
+    <%= form.text_field :siglech %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

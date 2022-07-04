@@ -1,0 +1,32 @@
+<%= form_with(model: structuretab) do |form| %>
+  <% if structuretab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(structuretab.errors.count, "error") %> prohibited this structuretab from being saved:</h2>
+
+      <ul>
+        <% structuretab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :descriptionch, style: "display: block" %>
+    <%= form.text_field :descriptionch %>
+  </div>
+
+  <div>
+    <%= form.label :siglech, style: "display: block" %>
+    <%= form.text_field :siglech %>
+  </div>
+
+  <div>
+    <%= form.label :signatairetab_id, style: "display: block" %>
+    <%= form.text_field :signatairetab_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

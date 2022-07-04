@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cadretabs</h1>
+
+<div id="cadretabs">
+  <% @cadretabs.each do |cadretab| %>
+    <%= render cadretab %>
+    <p>
+      <%= link_to "Show this cadretab", cadretab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cadretab", new_cadretab_path %>

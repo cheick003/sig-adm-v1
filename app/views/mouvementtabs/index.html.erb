@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mouvementtabs</h1>
+
+<div id="mouvementtabs">
+  <% @mouvementtabs.each do |mouvementtab| %>
+    <%= render mouvementtab %>
+    <p>
+      <%= link_to "Show this mouvementtab", mouvementtab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mouvementtab", new_mouvementtab_path %>

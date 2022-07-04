@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Arrivetabs</h1>
+
+<div id="arrivetabs">
+  <% @arrivetabs.each do |arrivetab| %>
+    <%= render arrivetab %>
+    <p>
+      <%= link_to "Show this arrivetab", arrivetab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New arrivetab", new_arrivetab_path %>

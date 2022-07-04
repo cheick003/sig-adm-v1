@@ -1,0 +1,57 @@
+<%= form_with(model: comptebanquetab) do |form| %>
+  <% if comptebanquetab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(comptebanquetab.errors.count, "error") %> prohibited this comptebanquetab from being saved:</h2>
+
+      <ul>
+        <% comptebanquetab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :banquetab_id, style: "display: block" %>
+    <%= form.text_field :banquetab_id %>
+  </div>
+
+  <div>
+    <%= form.label :codech, style: "display: block" %>
+    <%= form.text_field :codech %>
+  </div>
+
+  <div>
+    <%= form.label :numerocomptech, style: "display: block" %>
+    <%= form.text_field :numerocomptech %>
+  </div>
+
+  <div>
+    <%= form.label :ribch, style: "display: block" %>
+    <%= form.text_field :ribch %>
+  </div>
+
+  <div>
+    <%= form.label :ibanbicch, style: "display: block" %>
+    <%= form.text_field :ibanbicch %>
+  </div>
+
+  <div>
+    <%= form.label :numerocomptecompletch, style: "display: block" %>
+    <%= form.text_field :numerocomptecompletch %>
+  </div>
+
+  <div>
+    <%= form.label :employetab_id, style: "display: block" %>
+    <%= form.text_field :employetab_id %>
+  </div>
+
+  <div>
+    <%= form.label :pch, style: "display: block" %>
+    <%= form.check_box :pch %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

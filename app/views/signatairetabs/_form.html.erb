@@ -1,0 +1,142 @@
+<%= form_with(model: signatairetab) do |form| %>
+  <% if signatairetab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(signatairetab.errors.count, "error") %> prohibited this signatairetab from being saved:</h2>
+
+      <ul>
+        <% signatairetab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :recteurtitrech, style: "display: block" %>
+    <%= form.text_field :recteurtitrech %>
+  </div>
+
+  <div>
+    <%= form.label :recteurprenomch, style: "display: block" %>
+    <%= form.text_field :recteurprenomch %>
+  </div>
+
+  <div>
+    <%= form.label :recteurnomch, style: "display: block" %>
+    <%= form.text_field :recteurnomch %>
+  </div>
+
+  <div>
+    <%= form.label :recteurcorpsch, style: "display: block" %>
+    <%= form.text_field :recteurcorpsch %>
+  </div>
+
+  <div>
+    <%= form.label :recteurdistinctionch, style: "display: block" %>
+    <%= form.text_field :recteurdistinctionch %>
+  </div>
+
+  <div>
+    <%= form.label :doyentitrech, style: "display: block" %>
+    <%= form.text_field :doyentitrech %>
+  </div>
+
+  <div>
+    <%= form.label :doyenprenomch, style: "display: block" %>
+    <%= form.text_field :doyenprenomch %>
+  </div>
+
+  <div>
+    <%= form.label :doyennomch, style: "display: block" %>
+    <%= form.text_field :doyennomch %>
+  </div>
+
+  <div>
+    <%= form.label :doyencorpsch, style: "display: block" %>
+    <%= form.text_field :doyencorpsch %>
+  </div>
+
+  <div>
+    <%= form.label :doyendistinctionch, style: "display: block" %>
+    <%= form.text_field :doyendistinctionch %>
+  </div>
+
+  <div>
+    <%= form.label :chefservicefinancetitrech, style: "display: block" %>
+    <%= form.text_field :chefservicefinancetitrech %>
+  </div>
+
+  <div>
+    <%= form.label :chefservicefinanceprenomch, style: "display: block" %>
+    <%= form.text_field :chefservicefinanceprenomch %>
+  </div>
+
+  <div>
+    <%= form.label :chefservicefinancenomch, style: "display: block" %>
+    <%= form.text_field :chefservicefinancenomch %>
+  </div>
+
+  <div>
+    <%= form.label :chefservicefinancecorpsch, style: "display: block" %>
+    <%= form.text_field :chefservicefinancecorpsch %>
+  </div>
+
+  <div>
+    <%= form.label :chefservicefinancedistinctionch, style: "display: block" %>
+    <%= form.text_field :chefservicefinancedistinctionch %>
+  </div>
+
+  <div>
+    <%= form.label :agentcomptabletitre_ch, style: "display: block" %>
+    <%= form.text_field :agentcomptabletitre_ch %>
+  </div>
+
+  <div>
+    <%= form.label :agentcomptableprenom_ch, style: "display: block" %>
+    <%= form.text_field :agentcomptableprenom_ch %>
+  </div>
+
+  <div>
+    <%= form.label :agentcomptablenom_ch, style: "display: block" %>
+    <%= form.text_field :agentcomptablenom_ch %>
+  </div>
+
+  <div>
+    <%= form.label :agentcomptablecorps_ch, style: "display: block" %>
+    <%= form.text_field :agentcomptablecorps_ch %>
+  </div>
+
+  <div>
+    <%= form.label :agentcomptabledistinction_ch, style: "display: block" %>
+    <%= form.text_field :agentcomptabledistinction_ch %>
+  </div>
+
+  <div>
+    <%= form.label :controlefinanciertitrech, style: "display: block" %>
+    <%= form.text_field :controlefinanciertitrech %>
+  </div>
+
+  <div>
+    <%= form.label :controlefinancierprenomch, style: "display: block" %>
+    <%= form.text_field :controlefinancierprenomch %>
+  </div>
+
+  <div>
+    <%= form.label :controlefinanciernomch, style: "display: block" %>
+    <%= form.text_field :controlefinanciernomch %>
+  </div>
+
+  <div>
+    <%= form.label :controlefinanciercorpsch, style: "display: block" %>
+    <%= form.text_field :controlefinanciercorpsch %>
+  </div>
+
+  <div>
+    <%= form.label :controlefinancierdistinctionch, style: "display: block" %>
+    <%= form.text_field :controlefinancierdistinctionch %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

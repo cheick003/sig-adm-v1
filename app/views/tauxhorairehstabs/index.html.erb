@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tauxhorairehstabs</h1>
+
+<div id="tauxhorairehstabs">
+  <% @tauxhorairehstabs.each do |tauxhorairehstab| %>
+    <%= render tauxhorairehstab %>
+    <p>
+      <%= link_to "Show this tauxhorairehstab", tauxhorairehstab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tauxhorairehstab", new_tauxhorairehstab_path %>

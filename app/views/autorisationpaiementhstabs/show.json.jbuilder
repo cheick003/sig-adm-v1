@@ -1,0 +1,1 @@
+json.partial! "autorisationpaiementhstabs/autorisationpaiementhstab", autorisationpaiementhstab: @autorisationpaiementhstab

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Transmissiondeparttabs</h1>
+
+<div id="transmissiondeparttabs">
+  <% @transmissiondeparttabs.each do |transmissiondeparttab| %>
+    <%= render transmissiondeparttab %>
+    <p>
+      <%= link_to "Show this transmissiondeparttab", transmissiondeparttab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New transmissiondeparttab", new_transmissiondeparttab_path %>

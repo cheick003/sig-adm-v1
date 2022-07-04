@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Redacteurtabs</h1>
+
+<div id="redacteurtabs">
+  <% @redacteurtabs.each do |redacteurtab| %>
+    <%= render redacteurtab %>
+    <p>
+      <%= link_to "Show this redacteurtab", redacteurtab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New redacteurtab", new_redacteurtab_path %>

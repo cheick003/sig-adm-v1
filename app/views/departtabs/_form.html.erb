@@ -1,0 +1,87 @@
+<%= form_with(model: departtab) do |form| %>
+  <% if departtab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(departtab.errors.count, "error") %> prohibited this departtab from being saved:</h2>
+
+      <ul>
+        <% departtab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :anneech, style: "display: block" %>
+    <%= form.text_field :anneech %>
+  </div>
+
+  <div>
+    <%= form.label :datesch, style: "display: block" %>
+    <%= form.date_field :datesch %>
+  </div>
+
+  <div>
+    <%= form.label :numeroech, style: "display: block" %>
+    <%= form.text_field :numeroech %>
+  </div>
+
+  <div>
+    <%= form.label :arrivetab_id, style: "display: block" %>
+    <%= form.text_field :arrivetab_id %>
+  </div>
+
+  <div>
+    <%= form.label :referencech, style: "display: block" %>
+    <%= form.text_field :referencech %>
+  </div>
+
+  <div>
+    <%= form.label :objetch, style: "display: block" %>
+    <%= form.text_field :objetch %>
+  </div>
+
+  <div>
+    <%= form.label :redacteurtab_id, style: "display: block" %>
+    <%= form.text_field :redacteurtab_id %>
+  </div>
+
+  <div>
+    <%= form.label :servicetab_id, style: "display: block" %>
+    <%= form.text_field :servicetab_id %>
+  </div>
+
+  <div>
+    <%= form.label :attributtab_id, style: "display: block" %>
+    <%= form.text_field :attributtab_id %>
+  </div>
+
+  <div>
+    <%= form.label :correspondantch, style: "display: block" %>
+    <%= form.text_field :correspondantch %>
+  </div>
+
+  <div>
+    <%= form.label :adressech, style: "display: block" %>
+    <%= form.text_field :adressech %>
+  </div>
+
+  <div>
+    <%= form.label :supporttab_id, style: "display: block" %>
+    <%= form.text_field :supporttab_id %>
+  </div>
+
+  <div>
+    <%= form.label :tch, style: "display: block" %>
+    <%= form.check_box :tch %>
+  </div>
+
+  <div>
+    <%= form.label :cch, style: "display: block" %>
+    <%= form.check_box :cch %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

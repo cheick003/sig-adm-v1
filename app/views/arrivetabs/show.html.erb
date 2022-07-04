@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @arrivetab %>
+
+<div>
+  <%= link_to "Edit this arrivetab", edit_arrivetab_path(@arrivetab) %> |
+  <%= link_to "Back to arrivetabs", arrivetabs_path %>
+
+  <%= button_to "Destroy this arrivetab", @arrivetab, method: :delete %>
+</div>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @servicetab %>
+
+<div>
+  <%= link_to "Edit this servicetab", edit_servicetab_path(@servicetab) %> |
+  <%= link_to "Back to servicetabs", servicetabs_path %>
+
+  <%= button_to "Destroy this servicetab", @servicetab, method: :delete %>
+</div>

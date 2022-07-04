@@ -1,0 +1,92 @@
+<%= form_with(model: etatcontenuhstab) do |form| %>
+  <% if etatcontenuhstab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(etatcontenuhstab.errors.count, "error") %> prohibited this etatcontenuhstab from being saved:</h2>
+
+      <ul>
+        <% etatcontenuhstab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :anneech, style: "display: block" %>
+    <%= form.text_field :anneech %>
+  </div>
+
+  <div>
+    <%= form.label :datesch, style: "display: block" %>
+    <%= form.date_field :datesch %>
+  </div>
+
+  <div>
+    <%= form.label :numerooch, style: "display: block" %>
+    <%= form.text_field :numerooch %>
+  </div>
+
+  <div>
+    <%= form.label :autorisationpaiementhstab_id, style: "display: block" %>
+    <%= form.text_field :autorisationpaiementhstab_id %>
+  </div>
+
+  <div>
+    <%= form.label :etatpaiementhstab_id, style: "display: block" %>
+    <%= form.text_field :etatpaiementhstab_id %>
+  </div>
+
+  <div>
+    <%= form.label :employetab_id, style: "display: block" %>
+    <%= form.text_field :employetab_id %>
+  </div>
+
+  <div>
+    <%= form.label :volumeheurech, style: "display: block" %>
+    <%= form.text_field :volumeheurech %>
+  </div>
+
+  <div>
+    <%= form.label :tauxhorairehstab_id, style: "display: block" %>
+    <%= form.text_field :tauxhorairehstab_id %>
+  </div>
+
+  <div>
+    <%= form.label :montantch, style: "display: block" %>
+    <%= form.text_field :montantch %>
+  </div>
+
+  <div>
+    <%= form.label :comptebanquetab_id, style: "display: block" %>
+    <%= form.text_field :comptebanquetab_id %>
+  </div>
+
+  <div>
+    <%= form.label :banquetab_id, style: "display: block" %>
+    <%= form.text_field :banquetab_id %>
+  </div>
+
+  <div>
+    <%= form.label :structuretab_id, style: "display: block" %>
+    <%= form.text_field :structuretab_id %>
+  </div>
+
+  <div>
+    <%= form.label :datevch, style: "display: block" %>
+    <%= form.date_field :datevch %>
+  </div>
+
+  <div>
+    <%= form.label :vch, style: "display: block" %>
+    <%= form.check_box :vch %>
+  </div>
+
+  <div>
+    <%= form.label :cch, style: "display: block" %>
+    <%= form.check_box :cch %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

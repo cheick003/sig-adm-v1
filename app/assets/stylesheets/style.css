@@ -1,0 +1,38 @@
+
+/* begin tech style */
+
+a.bg-warning-tech{
+    color: #545b62;
+}
+
+a.bg-warning-tech:hover {
+    color: #000000;
+    /*background-color: #3c7ca1 !important;*/
+    background-color: #ffc107 !important;
+}
+
+a.active-warning-tech {
+    color: #000000;
+    background-color: #ffc107 !important;
+    /*background-color: #ffcd39 !important;*/
+}
+
+/*-- ---------------- --*/
+
+a.bg-danger-tech{
+    color: #545b62;
+}
+
+a.bg-danger-tech:hover {
+    color: #ffffff;
+    background-color: #bd2130 !important;
+    /*background-color: #dc3545 !important;*/
+}
+
+a.active-danger-tech {
+    color: #ffffff;
+    /*background-color: #bd2130 !important;*/
+    background-color: #dc3545 !important;
+}
+
+/* end tech style */

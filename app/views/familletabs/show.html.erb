@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @familletab %>
+
+<div>
+  <%= link_to "Edit this familletab", edit_familletab_path(@familletab) %> |
+  <%= link_to "Back to familletabs", familletabs_path %>
+
+  <%= button_to "Destroy this familletab", @familletab, method: :delete %>
+</div>

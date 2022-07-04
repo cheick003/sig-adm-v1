@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Typemouvementtabs</h1>
+
+<div id="typemouvementtabs">
+  <% @typemouvementtabs.each do |typemouvementtab| %>
+    <%= render typemouvementtab %>
+    <p>
+      <%= link_to "Show this typemouvementtab", typemouvementtab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New typemouvementtab", new_typemouvementtab_path %>

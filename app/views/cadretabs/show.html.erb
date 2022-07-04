@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @cadretab %>
+
+<div>
+  <%= link_to "Edit this cadretab", edit_cadretab_path(@cadretab) %> |
+  <%= link_to "Back to cadretabs", cadretabs_path %>
+
+  <%= button_to "Destroy this cadretab", @cadretab, method: :delete %>
+</div>

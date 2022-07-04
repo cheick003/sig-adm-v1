@@ -1,0 +1,72 @@
+<%= form_with(model: transmissiondeparttab) do |form| %>
+  <% if transmissiondeparttab.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(transmissiondeparttab.errors.count, "error") %> prohibited this transmissiondeparttab from being saved:</h2>
+
+      <ul>
+        <% transmissiondeparttab.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :anneech, style: "display: block" %>
+    <%= form.text_field :anneech %>
+  </div>
+
+  <div>
+    <%= form.label :datesch, style: "display: block" %>
+    <%= form.date_field :datesch %>
+  </div>
+
+  <div>
+    <%= form.label :numeroech, style: "display: block" %>
+    <%= form.text_field :numeroech %>
+  </div>
+
+  <div>
+    <%= form.label :departtab_id, style: "display: block" %>
+    <%= form.text_field :departtab_id %>
+  </div>
+
+  <div>
+    <%= form.label :expediteurtab_id, style: "display: block" %>
+    <%= form.text_field :expediteurtab_id %>
+  </div>
+
+  <div>
+    <%= form.label :destinateurtab_id, style: "display: block" %>
+    <%= form.text_field :destinateurtab_id %>
+  </div>
+
+  <div>
+    <%= form.label :notech, style: "display: block" %>
+    <%= form.text_field :notech %>
+  </div>
+
+  <div>
+    <%= form.label :tch, style: "display: block" %>
+    <%= form.check_box :tch %>
+  </div>
+
+  <div>
+    <%= form.label :daterch, style: "display: block" %>
+    <%= form.text_field :daterch %>
+  </div>
+
+  <div>
+    <%= form.label :rch, style: "display: block" %>
+    <%= form.check_box :rch %>
+  </div>
+
+  <div>
+    <%= form.label :cch, style: "display: block" %>
+    <%= form.check_box :cch %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

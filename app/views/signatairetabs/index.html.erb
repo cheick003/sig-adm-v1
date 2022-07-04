@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Signatairetabs</h1>
+
+<div id="signatairetabs">
+  <% @signatairetabs.each do |signatairetab| %>
+    <%= render signatairetab %>
+    <p>
+      <%= link_to "Show this signatairetab", signatairetab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New signatairetab", new_signatairetab_path %>

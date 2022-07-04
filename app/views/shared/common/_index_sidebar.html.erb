@@ -1,0 +1,167 @@
+<!--begin container-fluid/sidebarMenu   -->
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse position-fixed pt-5">
+  <div class="position-sticky pt-3">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+      <div class="accordion-item <%= @sidebar_item_1_1_visibility %>">
+        <div class="border-bottom alert-secondary">
+<!-- // H6 LE LIBELLE MENU -->
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center ps-3 pe-4 pt-2 text-muted text-uppercase small">
+            <span>
+              <i class="bi <%= @sidebar_item_1_1_icon_1 %>"></i>
+              <%= @sidebar_item_1_1 %>
+            </span>
+            <i class="bi <%= @sidebar_item_1_1_icon_2 %>"></i>
+          </h6>
+        </div>
+<!-- // H2 LE LIBELLE RUBRIQUE -->
+        <h2 class="accordion-header" id="flush-headingOne <%= @sidebar_item_1_2_visibility %>">
+          <button class="accordion-button collapsed active bg-dark text-white-50 p-xl-3 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <i class="bi  <%= @sidebar_item_1_2_icon_1 %> me-1 text-warning"></i><%= @sidebar_item_1_2 %>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse <%= @sidebar_item_1_1_show %>" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="bg-secondary bg-opacity-10">
+            <ul class="nav flex-column border-bottom border-top border-white <%= @sidebar_item_1_3_visibility %>">
+              <li class="nav-item">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_1_3_active %>" aria-current="page" href="<%= @sidebar_item_1_3_link %>">
+                  <i class="bi <%= @sidebar_item_1_3_icon_1 %> me-1"></i><%= @sidebar_item_1_3 %>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav flex-column border-bottom border-white <%= @sidebar_item_1_4_visibility %>">
+              <li class="nav-item">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_1_4_active %>" aria-current="page" href="<%= @sidebar_item_1_4_link %>">
+                  <i class="bi <%= @sidebar_item_1_4_icon_1 %> me-1"></i><%= @sidebar_item_1_4 %>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav flex-column border-bottom border-white <%= @sidebar_item_1_5_visibility %>">
+              <li class="nav-item">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_1_5_active %>" aria-current="page" href="<%= @sidebar_item_1_5_link %>">
+                  <i class="bi <%= @sidebar_item_1_5_icon_1 %> me-1"></i><%= @sidebar_item_1_5 %>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav flex-column border-bottom border-white <%= @sidebar_item_1_6_visibility %>">
+              <li class="nav-item">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_1_6_active %>" aria-current="page" href="<%= @sidebar_item_1_6_link %>">
+                  <i class="bi <%= @sidebar_item_1_6_icon_1 %> me-1"></i><%= @sidebar_item_1_6 %>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav flex-column border-bottom border- <%= @sidebar_item_1_7_visibility %>">
+              <li class="nav-item">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_1_7_active %>" aria-current="page" href="<%= @sidebar_item_1_7_link %>">
+                  <i class="bi <%= @sidebar_item_1_7_icon_1 %> me-1"></i><%= @sidebar_item_1_7 %>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item <%= @sidebar_item_2_1_visibility %>">
+        <div class="border-bottom alert-secondary <%= @sidebar_item_2_1_visibility %>">
+<!-- // H6 LE LIBELLE MENU -->
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center ps-3 pe-4 pt-2 text-muted text-uppercase small">
+            <span>
+              <i class="bi <%= @sidebar_item_2_1_icon_1 %>"></i>
+              <%= @sidebar_item_2_1 %>
+            </span>
+            <i class="bi <%= @sidebar_item_2_1_icon_2 %>"></i>
+          </h6>
+        </div>
+<!-- // H2 LE LIBELLE RUBRIQUE -->
+        <h2 class="accordion-header" id="flush-headingTwo <%= @sidebar_item_2_2_visibility %>">
+          <button class="accordion-button collapsed active bg-dark text-white-50 p-xl-3 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <i class="bi <%= @sidebar_item_2_1_icon_2 %> me-1 text-warning"></i><%= @sidebar_item_2_2 %>
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse <%= @sidebar_item_2_1_show %>" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="bg-secondary bg-opacity-10">
+            <ul class="nav flex-column">
+              <li class="nav-item border-bottom border-white <%= @sidebar_item_2_3_visibility %>">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_2_3_active %>" aria-current="page" href="<%= @sidebar_item_2_3_link %>">
+                  <i class="bi bi-server me-1"></i><%= @sidebar_item_2_3 %>
+                </a>
+              </li>
+              <li class="nav-item border-bottom border-white <%= @sidebar_item_2_4_visibility %>">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_2_4_active %>" aria-current="page" href="<%= @sidebar_item_2_4_link %>">
+                  <i class="bi bi-file-arrow-up-fill me-1"></i><%= @sidebar_item_2_4 %>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item <%= @sidebar_item_3_1_visibility %>">
+        <div class="border-bottom alert-secondary <%= @sidebar_item_3_1_visibility %>">
+<!--  // H6 LE LIBELLE MENU -->
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center ps-3 pe-4 pt-2 text-muted text-uppercase small">
+            <span>
+              <i class="bi <%= @sidebar_item_3_1_icon_1 %>"></i>
+              <%= @sidebar_item_3_1 %>
+            </span>
+            <i class="bi <%= @sidebar_item_3_1_icon_2 %>"></i>
+          </h6>
+        </div>
+<!-- // H2 LE LIBELLE RUBRIQUE -->
+        <h2 class="accordion-header" id="flush-headingThree <%= @sidebar_item_3_2_visibility %>">
+          <button class="accordion-button collapsed active bg-dark text-white-50 p-xl-3 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <i class="bi <%= @sidebar_item_3_2_icon_1 %> me-1 text-warning"></i><%= @sidebar_item_3_2 %>
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse <%= @sidebar_item_3_1_show %>" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="bg-secondary bg-opacity-10">
+            <ul class="nav flex-column">
+              <li class="nav-item border-bottom border-white <%= @sidebar_item_3_3_visibility %>">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_3_3_active %>" aria-current="page" href="<%= @sidebar_item_3_3_link %>"><i class="<%= @sidebar_item_3_3_icon_1 %> me-1"></i></i><%= @sidebar_item_3_3 %></a>
+              </li>
+              <li class="nav-item border-bottom border-white <%= @sidebar_item_3_4_visibility %>">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_3_4_active %>" aria-current="page" href="<%= @sidebar_item_3_4_link %>"><i class="<%= @sidebar_item_3_4_icon_1 %> me-1"></i><%= @sidebar_item_3_4 %></a>
+              </li>
+              <li class="nav-item border-bottom border-white <%= @sidebar_item_3_5_visibility %>">
+                <a class="nav-link active bg-danger-tech <%= @sidebar_item_3_5_active %>" aria-current="page" href="<%= @sidebar_item_3_5_link %>"><i class="<%= @sidebar_item_3_5_icon_1 %> me-1"></i><%= @sidebar_item_3_5 %></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item <%= @sidebar_item_4_1_visibility %>">
+        <div class="border-bottom alert-secondary <%= @sidebar_item_4_1_visibility %>">
+<!-- // H6 LE LIBELLE MENU -->
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center ps-3 pe-4 pt-2 text-muted text-uppercase small">
+            <span>
+              <i class="bi <%= @sidebar_item_4_1_icon_1 %>"></i>
+              <%= @sidebar_item_4_1 %>
+            </span>
+            <i class="bi <%= @sidebar_item_4_1_icon_2 %>"></i>
+          </h6>
+        </div>
+<!-- // H2 LE LIBELLE RUBRIQUE -->
+        <h2 class="accordion-header" id="flush-headingFour <%= @sidebar_item_4_2_visibility %>">
+          <button class="accordion-button collapsed active bg-dark text-white-50 p-xl-3 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            <i class="bi <%= @sidebar_item_4_1_icon_2 %> me-1 text-warning"></i><%= @sidebar_item_4_2 %>
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse <%= @sidebar_item_4_1_show %>" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="bg-secondary bg-opacity-10">
+            <ul class="nav flex-column">
+              <li class="nav-item border-bottom border-white <%= @sidebar_item_4_3_visibility %>">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_4_3_active %>" aria-current="page" href="<%= @sidebar_item_4_3_link %>"><i class="bi bi-question-circle-fill me-1"></i><%= @sidebar_item_4_3 %></a>
+              </li>
+              <li class="nav-item border-bottom border-white <%= @sidebar_item_4_3_visibility %>">
+                <a class="nav-link active bg-warning-tech <%= @sidebar_item_4_4_active %>" aria-current="page" href="<%= @sidebar_item_4_4_link %>"><i class="bi bi-file-earmark-pdf-fill me-1"></i><%= @sidebar_item_4_4 %></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+<!--end container-fluid/sidebarMenu   -->

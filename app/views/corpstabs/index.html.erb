@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Corpstabs</h1>
+
+<div id="corpstabs">
+  <% @corpstabs.each do |corpstab| %>
+    <%= render corpstab %>
+    <p>
+      <%= link_to "Show this corpstab", corpstab %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New corpstab", new_corpstab_path %>
